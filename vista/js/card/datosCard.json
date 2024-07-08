@@ -1,0 +1,58 @@
+{
+  "cardObjeto": [
+    {
+      "imagenSrc": "animal1.jpg",
+      "nombre": "MININA",
+      "condicion": "ADOPTA O APADRINA",
+      "descripcion": "Hembra de 6 años, dulce y cariñosa, le encanta jugar y recibir caricias."
+    },
+    {
+      "imagenSrc": "animal2.jpg",
+      "nombre": "NENA",
+      "condicion": "ADOPTA",
+      "descripcion": "Hembra de 5 meses, activo y juguetón, ideal para un hogar con espacio para correr."
+    },
+    {
+      "imagenSrc": "animal3.jpg",
+      "nombre": "ANDRES",
+      "condicion": "ADOPTA",
+      "descripcion": "Macho joven de 6 meses, curioso y amigable, necesita explorar y aprender."
+    },
+    {
+      "imagenSrc": "animal4.jpg",
+      "nombre": "CAISER",
+      "condicion": "ADOPTA O APADRINA",
+      "descripcion": "Macho adulto de 5 años, tranquilo y amoroso, perfecto para un hogar relajado."
+    },
+    {
+      "imagenSrc": "animal5.jpg",
+      "nombre": "PELUCHE",
+      "condicion": "ADOPTA O APADRINA",
+      "descripcion": "Macho de 5 años, peludo y cariñoso, busca un compañero para jugar y compartir."
+    },
+    {
+      "imagenSrc": "animal6.jpg",
+      "nombre": "LUNA",
+      "condicion": "ADOPTA",
+      "descripcion": "Hembra joven de 2 años, cariñosa y juguetona, ideal para una familia activa."
+    },
+    {
+      "imagenSrc": "animal7.jpg",
+      "nombre": "OSO",
+      "condicion": "ADOPTA",
+      "descripcion": "Macho  de 3 meses, tranquilo y leal, busca compañía y cariñoso."
+    },
+    {
+      "imagenSrc": "animal8.jpg",
+      "nombre": "MAX",
+      "condicion": "ADOPTA",
+      "descripcion": "Macho de 3 meses, inteligente y enérgico, le gusta aprender trucos nuevos."
+    },
+    {
+      "imagenSrc": "animal9.jpg",
+      "nombre": "BRUNO",
+      "condicion": "ADOPTA",
+      "descripcion": "Macho joven de 1 año, lleno de energía y amor, necesita mucho espacio para jugar."
+    }
+  ]
+}

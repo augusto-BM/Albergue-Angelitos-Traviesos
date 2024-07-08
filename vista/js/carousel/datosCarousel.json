@@ -1,0 +1,29 @@
+{
+    "carouselObjeto": [
+      {
+        "imagenSrc": "carroucel1.jpg",
+        "titulo": "¿Quieres ser un michipadrino?",
+        "tema": "¿Qué implica ser un Michipadrino?",
+        "descripcion": "Buscamos Michipadrinos para apoyar a nuestro albergue de gatos. Con tu generosidad, no solo estarás ayudando a proporcionar comida y cuidados veterinarios, sino también amor y un hogar temporal a estos adorables felinos"
+      },
+      {
+        "imagenSrc": "carroucel2.jpg",
+        "titulo": "¡Ayúdanos a cambiar esta tendencia!",
+        "tema": "El aumento de animales abandonados",
+        "descripcion": "Cada año, miles de animales son abandonados y terminan en albergues como el nuestro. Esta triste realidad está aumentando, y necesitamos tu ayuda para cambiarla. Adoptando a uno de nuestros animales, no solo les das un hogar y una familia, sino que también apoyas nuestra misión de educar y concienciar sobre la responsabilidad de tener mascotas."
+      },
+      {
+        "imagenSrc": "carroucel3.jpg",
+        "titulo": "¡Adopta a un compañero fiel!",
+        "tema": "Encuentra tu amigo peludo",
+        "descripcion": "En nuestro albergue, tenemos una variedad de perros y gatos esperando un hogar amoroso. Adoptar no solo cambia la vida de una mascota, sino también la tuya. Descubre cómo puedes darle una segunda oportunidad a estos fieles amigos."
+      },
+      {
+        "imagenSrc": "carroucel4.jpg",
+        "titulo": "¡Adopta, no compres!",
+        "tema": "Haz una elección responsable",
+        "descripcion": "Adoptar un animal de nuestro albergue no solo salva una vida, sino que también le brinda una segunda oportunidad a un compañero leal y amoroso. Cada mascota adoptada libera espacio en nuestro albergue para que podamos rescatar a otro necesitado. Juntos, podemos reducir la población de animales abandonados y promover el bienestar animal."
+      }
+    ]
+  }
+  
