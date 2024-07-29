@@ -67,7 +67,7 @@
   <body>
     <header>
       <nav class="navbar">
-        <div class="logo">
+        <div class="logo logo-container">
           <a href="index.html" class="logo">
             <img
               src="./vista/imagenes/logo/logo.png"
@@ -76,10 +76,9 @@
               height="70px"
             />
           </a>
-          
         </div>
         <ul class="links">
-          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="index.html">Inicio</a></li>
           <li><a href="#contactanos">Contactanos</a></li>
           <li><a href="#Sobre nosotros">Sobre nosotros</a></li>
           <li><a href="#Donaciones">Donaciones</a></li>
@@ -97,24 +96,105 @@
       </div>
     </header>
     <main>
-      <section class="carousel">
-        <div class="carousel-texto">
-          <p class="nombre-albergue">Albergue Angelitos Traviesos</p>
-          <h2>¿Quieres ser un michipadrino?</h2>
-          <div class="additional-messages">
-            <h3>¿Qué implica ser un Michipadrino?</h3>
-            <p>
-              Buscamos Michipadrinos para apoyar a nuestro albergue de gatos.
-              Con tu generosidad, no solo estarás ayudando a proporcionar comida
-              y cuidados veterinarios, sino también amor y un hogar temporal a
-              estos adorables felinos.
-            </p>
+      <section class="container-carousel">
+
+        <h1 class="nombre-albergue">Albergue Angelitos Traviesos</h1>
+
+        <div class="carruseles">
+          <!-- Slide 1 -->
+          <div class="carousel">
+            <img
+              src="./vista/imagenes/carroucel/carroucel1.jpg"
+              alt="Imagen del carrusel 1"
+              class="carousel-background"
+            />
+            <div class="overlay"></div>
+            <div class="carousel-texto">
+              <h2>¿Quieres ser un michipadrino?</h2>
+              <div class="additional-messages">
+                <h3>¿Qué implica ser un Michipadrino?</h3>
+                <p>
+                  Buscamos Michipadrinos para apoyar a nuestro albergue de
+                  gatos. Con tu generosidad, no solo estarás ayudando a
+                  proporcionar comida y cuidados veterinarios, sino también amor
+                  y un hogar temporal a estos adorables felinos.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel">
+            <img
+              src="./vista/imagenes/carroucel/carroucel2.jpg"
+              alt="Imagen del carrusel 2"
+              class="carousel-background"
+            />
+            <div class="overlay"></div>
+            <div class="carousel-texto">
+              <h2>¡Ayúdanos a cambiar esta tendencia!</h2>
+              <div class="additional-messages">
+                <h3>El aumento de animales abandonados</h3>
+                <p>
+                  Cada año, miles de animales son abandonados y terminan en albergues como el nuestro. Esta triste realidad está aumentando, y necesitamos tu ayuda para cambiarla. Adoptando a uno de nuestros animales, no solo les das un hogar y una familia, sino que también apoyas nuestra misión de educar y concienciar sobre la responsabilidad de tener mascotas.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel">
+            <img
+              src="./vista/imagenes/carroucel/carroucel3.jpg"
+              alt="Imagen del carrusel 3"
+              class="carousel-background"
+            />
+            <div class="overlay"></div>
+            <div class="carousel-texto">
+              <h2>¡Adopta a un compañero fiel!</h2>
+              <div class="additional-messages">
+                <h3>Encuentra tu amigo peludo</h3>
+                <p>
+                  En nuestro albergue, tenemos una variedad de perros y gatos esperando un hogar amoroso. Adoptar no solo cambia la vida de una mascota, sino también la tuya. Descubre cómo puedes darle una segunda oportunidad a estos fieles amigos.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 4 -->
+          <div class="carousel">
+            <img
+              src="./vista/imagenes/carroucel/carroucel4.jpg"
+              alt="Imagen del carrusel 4"
+              class="carousel-background"
+            />
+            <div class="overlay"></div>
+            <div class="carousel-texto">
+              <h2>¡Adopta, no compres!</h2>
+              <div class="additional-messages">
+                <h3>Haz una elección responsable</h3>
+                <p>
+                  Adoptar un animal de nuestro albergue no solo salva una vida, sino que también le brinda una segunda oportunidad a un compañero leal y amoroso. Cada mascota adoptada libera espacio en nuestro albergue para que podamos rescatar a otro necesitado. Juntos, podemos reducir la población de animales abandonados y promover el bienestar animal.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
+
+        <!-- Controles de navegación -->
+        <button class="carousel-control prev">&#10094;</button>
+        <button class="carousel-control next">&#10095;</button>
+        <div class="buttons">
+          <a href="https://www.facebook.com/people/Albergue-Angelitos-Traviesos/100064845214726/" target="_blank"><i title="Facebook" class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com/albergue_angelitostraviesos/" target="_blank"><i title="Instagram" class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.tiktok.com/@albergueangelitos" target="_blank"><i title="TikTok" class="fa-brands fa-tiktok"></i></a>
+          <a href="https://x.com/CamarenaTatiana?t=pKx-ijQl4PXIJkx5D6UOew&s=09"><i title="Twitter" class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        <!-- Indicadores -->
+        <div class="carousel-indicators"></div>
       </section>
 
       <section id="animales">
-        <h1>Nuestros Angelitos</h1>
+        <h1>AYUDANOS A AYUDAR ADOPTA</h1>
         <article class="contenedor-card" id="card-list"></article>
       </section>
     </main>
@@ -132,33 +212,13 @@
         </ul>
       </nav>
     </footer>
-    
+
     <!-- JavaScript -->
-    <script src="./vista/js/carousel/app.js"></script>
-    <script src="./vista/js/carousel/crearElementos.js"></script>
+    <script src="./vista/js/header/header.js" type="text/javascript"></script>
+
+    <script src="./vista/js/carousel/transicion.js"></script>
     <script src="./vista/js/card/crearElementos.js"></script>
 
-    <script type="text/javascript">
 
-      window.addEventListener("scroll", function () {
-        var header = document.querySelector("header");
-        header.classList.toggle("abajo", window.scrollY > 0);
-      });
-
-      document.addEventListener("DOMContentLoaded", function () {
-        const toogleBtn = document.querySelector(".toogle_btn");
-        const toggleBtnIcon = document.querySelector(".toogle_btn i");
-        const dropdownMenu = document.querySelector(".dropdown_menu");
-
-        toogleBtn.onclick = function () {
-          dropdownMenu.classList.toggle("open");
-          const isOpen = dropdownMenu.classList.contains("open");
-
-          toggleBtnIcon.classList = isOpen
-            ? "fa-solid fa-x"
-            : "fa-solid fa-bars";
-        };
-      });
-    </script>
   </body>
 </html>
