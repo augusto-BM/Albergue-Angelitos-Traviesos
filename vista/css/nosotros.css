@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
+
+.portada-nosotros {
+  width: 100%;
+  height: 30vh;
+  background-image: url("../imagenes/carroucel/Portada.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  position: relative;
+}
+
+.portada-nosotros::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.portada-nosotros h2 {
+  font-family: "Lato", sans-serif;
+  color: white;
+  font-size: 2.5em;
+  letter-spacing: 3px;
+  position: relative;
+  margin-bottom: 1rem;
+  z-index: 2;
+}
+.portada-nosotros h1 {
+  position: absolute;
+  text-align: center;
+  width: 90%;
+  top: 45%;
+  left: 50%; /* Centra horizontalmente */
+  transform: translateX(-50%) scale(1); /* Centra exactamente y establece escala inicial */
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 10px;
+  color: white;
+  z-index: 2;
+  /* Animación de zoom */
+  animation: zoomInfinite 3s ease-in-out infinite;
+  transform-origin: center; /* Origen de la transformación centrado */
+}
+
+@keyframes zoomInfinite {
+  0%,
+  100% {
+    transform: translateX(-50%) scale(1); /* Tamaño normal */
+  }
+  50% {
+    transform: translateX(-50%) scale(1.1); /* Escalado al 120% */
+  }
+}
+/* ************************************************************************************************************* */
+.contenido-nosotros {
+  width: 85%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contenido-fundadora {
+  width: 70%;
+  margin: 0px 25px;
+}
+
+.contenido-fundadora h2 {
+  font-size: 30px;
+  color: #284966;
+}
+.contenido-fundadora p {
+  font-family: "Lato", sans-serif;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 20px 10px;
+}
+
+/* Estilos para los botones de redes sociales */
+.buttons {
+  display: flex; /* Utiliza Flexbox */
+  justify-content: center;
+  gap: 40px;
+}
+
+.buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.buttons a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.buttons i {
+  font-size: 1.5em;
+}
+
+.contenido-fundadora-imagen {
+  width: 30%;
+  display: flex;
+  justify-content: center; /* Centra la imagen horizontalmente dentro del contenedor */
+  align-items: center; /* Centra la imagen verticalmente dentro del contenedor */
+  perspective: 1200px; /* Perspectiva más suave para las transformaciones 3D */
+}
+
+.contenido-fundadora-imagen img {
+  width: 300px;
+  height: 300px;
+  border-radius: 15px; /* Esquinas más redondeadas para un look moderno */
+  transform: rotateY(5deg) rotateX(5deg) scale(1.05); /* Rota y escala ligeramente la imagen en hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25),
+    /* Sombra más pronunciada en hover */ 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra secundaria más pronunciada */
+  transform-style: preserve-3d; /* Mantiene el estilo 3D durante la transformación */
+}
+
+.contenido-fundadora-imagen img:hover {
+  transform: rotateY(5deg) rotateX(5deg) scale(1.05); /* Rota y escala ligeramente la imagen en hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25),
+    /* Sombra más pronunciada en hover */ 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra secundaria más pronunciada */
+}
+
+@media screen and (max-width: 992px) {
+  .contenido-nosotros {
+    flex-direction: column;
+    margin-top: 0px;
+  }
+
+  .contenido-fundadora,
+  .contenido-fundadora-imagen {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .contenido-fundadora-imagen {
+    text-align: center;
+  }
+
+  .contenido-fundadora-imagen img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .contenido-fundadora h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+}
+@media (max-width: 580px) {
+  .portada-nosotros h1 {
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  .portada-nosotros h2 {
+    font-size: 1.5em;
+
+  }
+  .contenido-fundadora h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .contenido-fundadora p {
+    font-size: 12px;
+  }
+}
+/* ================================================================================================================= */
+.contenido-nosotros-mision {
+  width: 85%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contenido-nosotros-mision h2 {
+  font-size: 30px;
+  color: #284966;
+  margin-bottom: 20px;
+}
+
+.contenido-nosotros-mision img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+
+.contenido-nosotros-mision p {
+  width: 60%; /* Ancho inicial del párrafo */
+  max-width: 100%; /* Permite que el ancho se ajuste en pantallas más pequeñas */
+  font-family: "Lato", sans-serif;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 20px auto; /* Ajusta el margen para centrar el texto */
+  box-sizing: border-box; /* Incluye el padding en el cálculo del ancho total */
+}
+
+.contenido-nosotros-mision strong {
+  color: black;
+  font-weight: bolder;
+  font-size: 15px;
+}
+/* ------------------- */
+.corazones-principal {
+  margin: 50px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 70px;
+}
+
+.align {
+  position: relative;
+  width: 120px; /* Ajusta el tamaño según tus necesidades */
+  height: 120px; /* Ajusta el tamaño según tus necesidades */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.align i {
+  position: absolute;
+  font-size: 10em; /* Ajusta el tamaño del icono según tus necesidades */
+  color: rgba(0, 0, 0, 0.3); /* Color del icono con transparencia */
+  z-index: -1;
+  /* Agrega una sombra sutil para resaltar el icono */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.align span {
+  position: relative;
+  font-size: 13px;
+  z-index: 1;
+  color: #fff;
+  /* Agrega sombra sutil al texto para resaltar sobre el fondo del icono */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.align strong {
+  position: relative !important;
+  font-size: 25px !important;
+  color: #fff !important;
+}
+
+
+/* Colores específicos con sombras y transparencia */
+.align.align-albergados i {
+  color: rgba(255, 111, 97, 0.8); /* Rojo coral con transparencia */
+  text-shadow: 2px 2px 5px rgba(255, 111, 97, 0.5); /* Sombra que coincide con el color del icono */
+}
+
+.align.align-adoptados i {
+  color: rgba(106, 27, 154, 0.8); /* Morado con transparencia */
+  text-shadow: 2px 2px 5px rgba(106, 27, 154, 0.5); /* Sombra que coincide con el color del icono */
+}
+
+.align.align-esterilizaciónes i {
+  color: rgba(30, 136, 229, 0.8); /* Azul con transparencia */
+  text-shadow: 2px 2px 5px rgba(30, 136, 229, 0.5); /* Sombra que coincide con el color del icono */
+}
+
+.align.align-recatados i {
+  color: rgba(67, 160, 71, 0.8); /* Verde con transparencia */
+  text-shadow: 2px 2px 5px rgba(67, 160, 71, 0.5); /* Sombra que coincide con el color del icono */
+}
+
+/* ------------------- */
+.apoyar-principal {
+  margin: 50px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px; /* Reducido para hacer el espacio más manejable entre los elementos */
+
+}
+
+.apoyar-principal p {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  width: 100%; /* Ocupa el ancho completo del contenedor */
+  font-size: 15px; /* Tamaño de fuente ligeramente mayor para mejor legibilidad */
+  margin-bottom: 30px; /* Espacio debajo del título */
+  color: #333; /* Color de texto más oscuro para mayor contraste */
+  line-height: 1.5; /* Mayor interlineado para mejorar la legibilidad */
+
+}
+
+.seccion {
+  width: 400px; /* Ancho fijo para cada sección */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #f8f9fa; /* Fondo claro para las secciones */
+  border-radius: 8px; /* Bordes redondeados para un diseño más suave */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para profundidad */
+  padding: 20px; /* Espaciado interno */
+}
+
+.seccion i {
+  font-size: 4em; /* Tamaño del icono para que sea visible y estético */
+  color: #C0BDBD; /* Color atractivo para el icono */
+  margin-bottom: 15px; /* Espacio debajo del icono */
+}
+
+.text-content {
+  color: #333; /* Color de texto oscuro para el contenido */
+}
+
+.text-content span {
+  font-family: "Lato", sans-serif;
+  display: block;
+  margin: 5px 0; /* Espacio vertical entre las líneas de texto */
+  font-size: 14px; /* Tamaño de fuente ligeramente mayor para mejor legibilidad */
+
+}
+
+.text-content span strong {
+  
+  font-size: 18px; /* Tamaño de fuente mayor para el texto destacado */
+  color: #000; /* Color oscuro para mayor contraste */
+}
+
+
+
+/* Estilos responsivos */
+@media (max-width: 992px) {
+  .contenido-nosotros-mision strong {
+    width: 80%;
+    font-size: 13px;
+  }
+  .contenido-nosotros-mision p {
+    font-size: 12px;
+    width: 80%; /* Aumenta el ancho del párrafo en pantallas medianas */
+  }
+}
+
+@media (max-width: 768px) {
+  .contenido-nosotros-mision p {
+    width: 90%; /* Aumenta aún más el ancho del párrafo en pantallas pequeñas */
+  }
+}
+@media (max-width: 430px) {
+  .contenido-nosotros-mision p, strong {
+    width: 100%; /* Aumenta aún más el ancho del párrafo en pantallas pequeñas */
+  }
+}
+
+/* ************************************************************************************************************* */
