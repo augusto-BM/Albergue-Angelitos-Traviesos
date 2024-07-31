@@ -1,0 +1,304 @@
+.portada-nosotros {
+  width: 100%;
+  height: 30vh;
+  background-image: url("../imagenes/carroucel/Portada.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  position: relative;
+}
+
+.portada-nosotros::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.portada-nosotros h2 {
+  font-family: "Lato", sans-serif;
+  color: white;
+  font-size: 2.5em;
+  letter-spacing: 3px;
+  position: relative;
+  margin-bottom: 1rem;
+  z-index: 2;
+}
+.portada-nosotros h1 {
+  position: absolute;
+  text-align: center;
+  width: 90%;
+  top: 45%;
+  left: 50%; /* Centra horizontalmente */
+  transform: translateX(-50%) scale(1); /* Centra exactamente y establece escala inicial */
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 10px;
+  color: white;
+  z-index: 2;
+  /* Animación de zoom */
+  animation: zoomInfinite 3s ease-in-out infinite;
+  transform-origin: center; /* Origen de la transformación centrado */
+}
+
+@keyframes zoomInfinite {
+  0%,
+  100% {
+    transform: translateX(-50%) scale(1); /* Tamaño normal */
+  }
+  50% {
+    transform: translateX(-50%) scale(1.1); /* Escalado al 120% */
+  }
+}
+/* ************************************************************************************************************* */
+/* ================================================================================================================= */
+.contenido-donaciones {
+  width: 85%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contenido-donaciones h2 {
+  font-size: 30px;
+  color: #284966;
+}
+
+.contenido-donaciones p {
+  width: 70%; /* Ancho inicial del párrafo */
+  max-width: 100%; /* Permite que el ancho se ajuste en pantallas más pequeñas */
+  font-family: "Lato", sans-serif;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 20px auto; /* Ajusta el margen para centrar el texto */
+  box-sizing: border-box; /* Incluye el padding en el cálculo del ancho total */
+}
+
+.contenido-donaciones i {
+  color: black;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+/* ------------------- */
+
+.apoyar-principal {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px; /* Reducido para hacer el espacio más manejable entre los elementos */
+}
+
+.seccion {
+  width: 400px; /* Ancho fijo para cada sección */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.seccion img {
+  width: 160px; /* Ancho ajustado para imágenes rectangulares */
+  height: auto; /* Mantiene la proporción original de la imagen */
+  max-height: 100px; /* Alto máximo para asegurar que no se haga demasiado grande */
+  object-fit: cover; /* Ajusta la imagen para llenar el contenedor sin distorsionar */
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+
+.text-content {
+  color: #333; /* Color de texto oscuro para el contenido */
+}
+
+.text-content span {
+  font-family: "Lato", sans-serif;
+  display: block;
+  margin: 5px 0; /* Espacio vertical entre las líneas de texto */
+  font-size: 14px; /* Tamaño de fuente ligeramente mayor para mejor legibilidad */
+}
+
+.text-content span strong {
+  font-size: 18px; /* Tamaño de fuente mayor para el texto destacado */
+  color: #000; /* Color oscuro para mayor contraste */
+}
+
+.seccion a {
+  display: block;
+  width: 100%; /* Ancho completo para el botón */
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  color: #fff; /* Color de texto blanco */
+  background-color: #999; /* Color de fondo plomo */
+  padding: 12px;
+  border-radius: 50px; /* Borde totalmente circular a los lados */
+  font-size: 16px; /* Tamaño de fuente para el botón */
+  font-family: "Lato", sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  transition: all 0.3s ease; /* Transición suave para el hover */
+  text-transform: uppercase;
+}
+
+.seccion a:hover {
+  background-color: #4d4d4d; /* Color de fondo al pasar el mouse */
+  transform: scale(1.1); /* Aumento mayor al pasar el mouse */
+}
+
+/* Estilos responsivos */
+@media (max-width: 992px) {
+  .contenido-donaciones p {
+    font-size: 12px;
+    width: 80%; /* Aumenta el ancho del párrafo en pantallas medianas */
+  }
+}
+
+@media (max-width: 768px) {
+  .contenido-donaciones p {
+    width: 90%; /* Aumenta aún más el ancho del párrafo en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 430px) {
+  .contenido-donaciones p, strong {
+    width: 100%; /* Aumenta aún más el ancho del párrafo en pantallas pequeñas */
+  }
+}
+
+/* Estilos del modal */
+.modal {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed; /* Usar fixed para que se mantenga en vista */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(77, 77, 77, 0.7);
+  transition: all 0.4s;
+  z-index: 1000; /* Asegúrate de que el modal esté encima del contenido */
+}
+
+/* Contenido del modal */
+.modal-content {
+  padding: 20px;
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh; /* Limita la altura del contenido */
+  background: #fff;
+  border-radius: 15px; /* Bordes más redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más prominente */
+  overflow-y: auto; /* Permite el scroll si el contenido es largo */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra el contenido dentro del modal */
+}
+
+/* Estilos para el título del modal */
+.modal-content h2 {
+  margin-top: 0; /* Elimina el margen superior del título */
+  font-size: 24px; /* Tamaño de fuente mayor para el título */
+  color: #284966; /* Color del texto del título */
+  text-align: center; /* Centra el título */
+}
+
+/* Estilos para el texto del modal */
+.modal-content p {
+  margin: 20px 0; /* Espacio alrededor del párrafo */
+  font-size: 14px; /* Tamaño de fuente más grande para mejor legibilidad */
+  line-height: 1.5; /* Altura de línea para mejorar la legibilidad */
+  color: #666; /* Color del texto del párrafo */
+  text-align: left; /* Centra el texto */
+  margin: 10px 40px;
+  letter-spacing: 1px;
+  font-family: "Lato", sans-serif;
+}
+
+/* Estilos para la imagen dentro del modal */
+.modal-content img {
+  max-width: 100%; /* Asegura que la imagen no se desborde del modal */
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-radius: 10px; /* Bordes redondeados en la imagen */
+}
+
+/* Estilos para el botón de cerrar */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 35px; /* Aumenta el tamaño del botón de cerrar */
+  height: 35px;
+  border-radius: 10px; /* Botón completamente redondeado */
+  background: rgba(0, 0, 0, 0.3); /* Fondo ligeramente más oscuro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close-btn a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px; /* Aumenta el tamaño del icono de cerrar */
+  color: #fff; /* Color del texto del botón de cerrar */
+}
+
+.close-btn:hover {
+  background-color: #4d4d4d;
+}
+
+
+/* Mostrar el modal al hacer clic */
+.modal:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Estilos responsivos */
+@media (max-width: 992px) {
+  .modal-content {
+    width: 95%; /* Ajusta el ancho para pantallas medianas */
+  }
+
+  .contenido-donaciones p {
+    font-size: 12px;
+    width: 80%; /* Aumenta el ancho del párrafo en pantallas medianas */
+  }
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    width: 95%; /* Ajusta el ancho para pantallas pequeñas */
+  }
+
+  .contenido-donaciones p {
+    width: 90%; /* Aumenta aún más el ancho del párrafo en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 430px) {
+  .modal-content {
+    width: 100%; /* Ajusta el ancho para pantallas muy pequeñas */
+  }
+
+  .contenido-donaciones p,
+  .contenido-donaciones strong {
+    width: 100%; /* Ajusta el ancho del párrafo en pantallas muy pequeñas */
+  }
+}
