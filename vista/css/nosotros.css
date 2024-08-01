@@ -154,6 +154,11 @@
   .contenido-fundadora-imagen {
     text-align: center;
   }
+  .contenido-fundadora h2 {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+  }
 
   .contenido-fundadora-imagen img {
     display: block;

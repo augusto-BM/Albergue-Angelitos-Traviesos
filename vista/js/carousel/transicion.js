@@ -68,11 +68,11 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Iniciar el cambio automático de slides cada 10 segundos
-  let autoSlideInterval = setInterval(goToNextSlide, 10000);
+  let autoSlideInterval = setInterval(goToNextSlide, 12000);
 
   function resetAutoSlide() {
       clearInterval(autoSlideInterval); // Detener el intervalo actual
-      autoSlideInterval = setInterval(goToNextSlide, 10000); // Iniciar uno nuevo
+      autoSlideInterval = setInterval(goToNextSlide, 12000); // Iniciar uno nuevo
   }
 
   // Inicializar la visibilidad y los indicadores

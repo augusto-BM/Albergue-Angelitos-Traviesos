@@ -4,37 +4,37 @@
       "imagenSrc": "animal1.jpg",
       "nombre": "MININA",
       "condicion": "ADOPTA O APADRINA",
-      "descripcion": "Hembra de 6 años, dulce y cariñosa, le encanta jugar y recibir caricias."
+      "descripcion": "Hembra de 4 meses, dulce y cariñosa, le encanta jugar y recibir caricias."
     },
     {
       "imagenSrc": "animal2.jpg",
-      "nombre": "NENA",
+      "nombre": "ANDRES",
       "condicion": "ADOPTA",
-      "descripcion": "Hembra de 5 meses, activo y juguetón, ideal para un hogar con espacio para correr."
+      "descripcion": "Macho de 5 meses, activo y juguetón, ideal para un hogar con espacio para correr."
     },
     {
       "imagenSrc": "animal3.jpg",
-      "nombre": "ANDRES",
+      "nombre": "NENA",
       "condicion": "ADOPTA",
-      "descripcion": "Macho joven de 6 meses, curioso y amigable, necesita explorar y aprender."
+      "descripcion": "Hembra joven de 6 meses, curiosa y amigable, necesita explorar y aprender."
     },
     {
       "imagenSrc": "animal4.jpg",
-      "nombre": "CAISER",
+      "nombre": "Felina",
       "condicion": "ADOPTA O APADRINA",
-      "descripcion": "Macho adulto de 5 años, tranquilo y amoroso, perfecto para un hogar relajado."
+      "descripcion": "Hembra de 5 meses, tranquila y amorosa, perfecto para un hogar relajado."
     },
     {
       "imagenSrc": "animal5.jpg",
-      "nombre": "PELUCHE",
+      "nombre": "TIGRILLO",
       "condicion": "ADOPTA O APADRINA",
-      "descripcion": "Macho de 5 años, peludo y cariñoso, busca un compañero para jugar y compartir."
+      "descripcion": "Macho de 5 meses, peludo y cariñoso, busca un compañero para jugar y compartir."
     },
     {
       "imagenSrc": "animal6.jpg",
       "nombre": "LUNA",
       "condicion": "ADOPTA",
-      "descripcion": "Hembra joven de 2 años, cariñosa y juguetona, ideal para una familia activa."
+      "descripcion": "Hembra joven de 7 meses, cariñosa y juguetona, ideal para una familia activa."
     },
     {
       "imagenSrc": "animal7.jpg",

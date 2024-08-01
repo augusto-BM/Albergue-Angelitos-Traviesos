@@ -1,11 +1,174 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contactanos</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contactanos</title>
+
+    <meta name="description" content="Descripción breve de la página." />
+    <meta name="robots" content="index, follow" />
+    <link
+      rel="canonical"
+      href="https://augusto-bm.github.io/Albergue-Angelitos-Traviesos/"
+    />
+    <meta
+      name="keywords"
+      content="Albergue, Perù, animales, donacion, gatos, perros, rescata, adopta, estereliza, no compres, apoya"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://www.facebook.com/people/Albergue-Angelitos-Traviesos/100064845214726/"
+    />
+    <meta property="og:title" content="Albergue Angelitos Traviesos" />
+    <meta
+      property="og:description"
+      content="Tenemos 150 angelitos en el albergue. Ayúdanos a seguir cambiando sus vidas."
+    />
+    <meta
+      property="og:image"
+      content="https://www.facebook.com/photo/?fbid=475190617985775&set=a.475190614652442"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://x.com/CamarenaTatiana?t=pKx-ijQl4PXIJkx5D6UOew&s=09"
+    />
+    <meta property="twitter:title" content="Albergue Angelitos Traviesos" />
+    <meta
+      property="twitter:description"
+      content="Apoyanos a seguir ayudando a mas angelitos de las frias calles, tenemos a cargo mas de 150 angelitos"
+    />
+    <meta
+      property="twitter:image"
+      content="https://x.com/CamarenaTatiana/photo"
+    />
+    <!-- Favicon -->
+
+    <link rel="icon" type="image/png" href="./imagenes/logo/logo.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/contactanos.css" />
+    <link rel="stylesheet" href="../css/footer.css  " />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo logo-container">
+          <a href="https://augusto-bm.github.io/Albergue-Angelitos-Traviesos/" class="logo">
+            <img
+              src="../imagenes/logo/logo.png"
+              alt="Logo albergue Angelitos Traviesos"
+              width="70px"
+              height="70px"
+            />
+          </a>
+        </div>
+        <ul class="links">
+          <li><a href="https://augusto-bm.github.io/Albergue-Angelitos-Traviesos/">Inicio</a></li>
+          <li><a href="https://augusto-bm.github.io/Albergue-Angelitos-Traviesos/vista/paginas/contactanos.html">Contactanos</a></li>
+          <li><a href="https://augusto-bm.github.io/Albergue-Angelitos-Traviesos/vista/paginas/donaciones.html">Donaciones</a></li>
+          <li><a href="https://augusto-bm.github.io/Albergue-Angelitos-Traviesos/vista/paginas/nosotros.html">Sobre nosotros</a></li>
+        </ul>
+
+        <div class="toogle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+      <div class="dropdown_menu">
+        <li><a href="https://augusto-bm.github.io/Albergue-Angelitos-Traviesos/">Inicio</a></li>
+        <li><a href="https://augusto-bm.github.io/Albergue-Angelitos-Traviesos/vista/paginas/contactanos.html">Contactanos</a></li>
+        <li><a href="https://augusto-bm.github.io/Albergue-Angelitos-Traviesos/vista/paginas/donaciones.html">Donaciones</a></li>
+        <li><a href="https://augusto-bm.github.io/Albergue-Angelitos-Traviesos/vista/paginas/nosotros.html">Sobre nosotros</a></li>
+      </div>
+    </header>
+    <main>
+      <section class="portada-contactanos">
+        <h1 class="nombre-albergue">Albergue Angelitos Traviesos</h1>
+        <h2>Contactanos</h2>
+      </section>
+    
+      <section class="contenido-contactanos">
+        <h2>¿Tienes alguna sugerencia o pregunta, o te gustaría colaborar con nosotros?</h2>
+        <p>
+          <i>Puedes hacerlo de varias formas: haciendo una donación, apadrinando a uno de nuestros angelitos, o uniéndote a nuestro equipo de voluntarios. ¡No dudes en contactarnos! Agradecemos tu interés en apoyar nuestra causa. Envíanos un mensaje y estaremos encantados de responderte.</i>
+          <br />
+        </p>
+    
+        <div class="contactanos-principal">
+          <form id="contactanos-formulario" action="https://formsubmit.co/sokejik276@hostlace.com" method="POST">
+            <div class="formulario-grupo">
+              <div class="formulario-campo">
+                <input type="text" id="nombre" name="nombre" placeholder=" " required>
+                <label for="nombre">Nombre y Apellidos</label>
+                <span class="error-message" id="nombre-error">Por favor ingresa solo letras y espacios.</span>
+              </div>
+              <div class="formulario-campo">
+                <input type="email" id="email" name="email" placeholder=" " required>
+                <label for="email">Email</label>
+                <span class="error-message" id="email-error">Por favor ingresa un email válido.</span>
+              </div>
+            </div>
+        
+            <div class="formulario-grupo">
+              <div class="formulario-campo">
+                <input type="tel" id="celular" name="celular" placeholder=" " required pattern="[0-9]{9}">
+                <label for="celular">Celular</label>
+                <span class="error-message" id="celular-error">Por favor ingresa 9 dígitos.</span>
+              </div>
+              <div class="formulario-campo">
+                <input type="text" id="motivo" name="motivo" placeholder=" " required>
+                <label for="motivo">Motivo</label>
+                <span class="error-message" id="motivo-error">Por favor ingresa solo letras y espacios.</span>
+              </div>
+            </div>
+        
+            <div class="formulario-grupo">
+              <div class="formulario-campo" style="grid-column: span 2;">
+                <textarea id="mensaje" name="mensaje" placeholder=" " required></textarea>
+                <label class="textArea-mensaje" for="mensaje">Mensaje</label>
+                <span class="error-message" id="mensaje-error">El mensaje no puede estar vacío.</span>
+              </div>
+            </div>
+        
+            <button type="submit">Enviar</button>
+            <input type="hidden" name="_next" value="https://augusto-bm.github.io/Albergue-Angelitos-Traviesos/">
+            <input type="hidden" name="_captcha" value="false">
+          </form>
+        </div>
+        
+        
+      </section>
+    </main>
+    
+    <footer>
+      <p>
+        &copy; 2024 Albergue Angelitos Traviesos - Todos los derechos
+        reservados.
+      </p>
+      <nav>
+        <ul>
+          <li><a href="../../index.html">Inicio</a></li>
+          <li><a href="contactanos.html">Contactanos</a></li>
+          <li><a href="donaciones.html">Donaciones</a></li>
+          <li><a href="nosotros.html">Sobre nosotros</a></li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="../js/header/header.js"></script>
+    <script src="../js/donaciones/modalDonaciones.js"></script>
+    <script src="../js/contactanos/formulario.js"></script>
+  </body>
 </html>

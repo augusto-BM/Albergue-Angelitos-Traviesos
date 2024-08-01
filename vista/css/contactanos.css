@@ -1,0 +1,208 @@
+  .portada-contactanos {
+    width: 100%;
+    height: 30vh;
+    background-image: url("../imagenes/carroucel/Portada.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+  }
+
+  .portada-contactanos::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+
+  .portada-contactanos h2 {
+    font-family: "Lato", sans-serif;
+    color: white;
+    font-size: 2.5em;
+    letter-spacing: 3px;
+    position: relative;
+    margin-bottom: 1rem;
+    z-index: 2;
+  }
+  .portada-contactanos h1 {
+    position: absolute;
+    text-align: center;
+    width: 90%;
+    top: 45%;
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%) scale(1); /* Centra exactamente y establece escala inicial */
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    color: white;
+    z-index: 2;
+    /* Animación de zoom */
+    animation: zoomInfinite 3s ease-in-out infinite;
+    transform-origin: center; /* Origen de la transformación centrado */
+  }
+
+  @keyframes zoomInfinite {
+    0%,
+    100% {
+      transform: translateX(-50%) scale(1); /* Tamaño normal */
+    }
+    50% {
+      transform: translateX(-50%) scale(1.1); /* Escalado al 120% */
+    }
+  }
+  /* ************************************************************************************************************* */
+  /* ================================================================================================================= */
+  .contenido-contactanos {
+    width: 85%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contenido-contactanos h2 {
+    font-size: 20px;
+    color: #284966;
+  }
+
+  .contenido-contactanos p {
+    width: 70%; /* Ancho inicial del párrafo */
+    max-width: 100%; /* Permite que el ancho se ajuste en pantallas más pequeñas */
+    font-family: "Lato", sans-serif;
+    color: #666;
+    line-height: 1.5;
+    margin: 10px auto; /* Ajusta el margen para centrar el texto */
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho total */
+  }
+
+  .contenido-contactanos i {
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  /* ******************************** */
+/* Estilos generales del formulario */
+.contactanos-principal {
+  width: 100%;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px; /* Espacio alrededor del contenido */
+  overflow: visible; /* Asegúrate de que el contenido no esté oculto */
+}
+
+#contactanos-formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formulario-grupo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.formulario-campo {
+  position: relative;
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 18px;
+}
+
+.formulario-campo input,
+.formulario-campo textarea {
+  height: 35px;
+  position: relative;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  background-color: #fcfcfc;
+}
+
+.formulario-campo input:focus,
+.formulario-campo textarea:focus {
+  border: 3px solid #4d4d4d;
+  outline: none;
+  box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.formulario-campo label {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #666;
+  pointer-events: none; 
+  padding: 0 4px; 
+  transition: all 0.3s ease;
+  z-index: 3; 
+  border-radius: 50px;
+}
+
+.formulario-campo .textArea-mensaje {
+  top: 16%;
+}
+
+/* Estilo cuando el input o textarea está enfocado o contiene texto */
+.formulario-campo input:focus ~ label, 
+.formulario-campo textarea:focus ~ label,
+.formulario-campo input:not(:placeholder-shown) ~ label, 
+.formulario-campo textarea:not(:placeholder-shown) ~ label {
+  color: rgba(0,0,0, 1);
+  transform: translateX(-5px) translateY(-35px);
+  font-size: 0.75em;
+}
+
+textarea {
+  resize: none; /* Desactiva la opción de redimensionar el textarea */
+  min-height: 100px;
+}
+
+button {
+  margin: 5px auto; /* Añadido margen para separación */
+  width: 90%; /* Ancho completo para el botón */
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  color: #fff; /* Color de texto blanco */
+  background-color: #999; /* Color de fondo plomo */
+  padding: 12px;
+  border-radius: 50px; /* Borde totalmente circular a los lados */
+  font-size: 16px; /* Tamaño de fuente para el botón */
+  font-family: "Lato", sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  transition: all 0.3s ease; /* Transición suave para el hover */
+  text-transform: uppercase;
+  border: none;
+}
+
+button:hover {
+  background-color: #4d4d4d; /* Color de fondo al pasar el mouse */
+  transform: scale(1.1); /* Aumento mayor al pasar el mouse */
+}
+
+/* Estilos para los mensajes de error */
+.error-message {
+  position: absolute;
+  color: red;
+  font-size: 0.775em;
+  display: none; /* Oculto por defecto */
+  top: 100%; /* Coloca el mensaje de error justo debajo del campo */
+  left: 0;
+  width: 100%; /* Alinea el mensaje con el ancho del campo */
+}
+
+

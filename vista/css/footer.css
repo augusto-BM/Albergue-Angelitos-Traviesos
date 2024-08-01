@@ -15,8 +15,10 @@ footer nav ul {
 }
 
 footer nav ul li {
+    display: flex;
+    flex-wrap: wrap;
     display: inline; /* Mostrar los elementos de la lista en línea */
-    margin-right: 20px; /* Espacio entre los elementos de la lista */
+    margin-right: 12px; /* Espacio entre los elementos de la lista */
 }
 
 footer nav ul li a {
@@ -24,6 +26,7 @@ footer nav ul li a {
     text-decoration: none; /* Quitar subrayado de los enlaces */
     font-weight: bold; /* Texto en negrita */
     transition: color 0.3s ease; /* Transición suave para el cambio de color */
+    font-size: 12px;
 }
 
 footer nav ul li a:hover {

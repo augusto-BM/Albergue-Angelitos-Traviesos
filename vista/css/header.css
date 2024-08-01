@@ -34,6 +34,9 @@ header .logo {
 .logo-container {
   animation: rotateLogo 20s infinite;
 }
+.logo-container:hover {
+  animation-play-state: paused;
+}
 
 @keyframes rotateLogo {
   0% {
@@ -76,12 +79,31 @@ header li a {
   letter-spacing: 2px;
   transition: color 0.7s ease; 
 }
+header li a:hover {
+  color: #f3b342;
+}
+header .toogle_btn:hover i {
+  color: #f3b342;
+  transform: scale(1.1);
+}
+
 
 header.abajo .logo,
 header.abajo li a,
 header.abajo .toogle_btn {
   color: #000;
 }
+
+header.abajo li a:hover {
+  color: #f3b342;
+}
+
+header.abajo .toogle_btn:hover i {
+  color: #f3b342;
+  transform: scale(1.1);
+}
+
+
 header.abajo .dropdown_menu{
   background: rgba(255, 255, 255, 0.9);
 }
@@ -93,7 +115,7 @@ header.abajo .dropdown_menu{
   display: none;
 }
 
-.dropdown_menu{
+.dropdown_menu {
   display: none;
   position: absolute;
   right: 2rem;
@@ -108,12 +130,26 @@ header.abajo .dropdown_menu{
   transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.dropdown_menu.open{
-  height: 200px;
+.dropdown_menu.open {
+  height: 220px;
+}
+
+.dropdown_menu li {
+  text-align: center;
+  margin-top: 7px;
+}
+
+.dropdown_menu a {
+  display: block; /* Hace que el enlace ocupe todo el espacio del <li> */
+  padding: 0.7rem; /* Ajusta el relleno según tu diseño */
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  color: white; /* Cambia el color del texto según tu diseño */
+  border-radius: 10px;
 
 }
-.dropdown_menu li{
-  padding: 0.7rem;
+
+.dropdown_menu a:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Cambia el color de fondo en hover */
 }
 
 @media (max-width: 992px) {
@@ -126,8 +162,8 @@ header.abajo .dropdown_menu{
 }
 
 @media (max-width: 576px) {
-  .dropdown_menu{
+  .dropdown_menu {
     left: 2rem;
-    width: unset;
+    width: unset; /* Ajusta el ancho del menú desplegable en pantallas pequeñas */
   }
 }
