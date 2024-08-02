@@ -136,6 +136,11 @@
   font-size: 18px; /* Tamaño de fuente mayor para el texto destacado */
   color: #000; /* Color oscuro para mayor contraste */
 }
+.text-content b {
+  font-size: 12px; /* Tamaño de fuente mayor para el texto destacado */
+  color: #000; /* Color oscuro para mayor contraste */
+  letter-spacing: 1.5px;
+}
 
 .seccion a {
   display: block;
