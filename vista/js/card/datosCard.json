@@ -4,55 +4,43 @@
       "imagenSrc": "animal1.jpg",
       "nombre": "MININA",
       "condicion": "ADOPTA O APADRINA",
-      "descripcion": "Hembra de 4 meses, dulce y cariñosa, le encanta jugar y recibir caricias."
+      "descripcion": "Hembra de 3 meses, dulce y cariñosa, le encanta jugar y recibir caricias."
     },
     {
       "imagenSrc": "animal2.jpg",
       "nombre": "ANDRES",
       "condicion": "ADOPTA",
-      "descripcion": "Macho de 5 meses, activo y juguetón, ideal para un hogar con espacio para correr."
+      "descripcion": "Macho de 3 meses, activo y juguetón, ideal para un hogar con espacio para correr."
     },
     {
       "imagenSrc": "animal3.jpg",
       "nombre": "NENA",
       "condicion": "ADOPTA",
-      "descripcion": "Hembra joven de 6 meses, curiosa y amigable, necesita explorar y aprender."
+      "descripcion": "Hembra joven de 3 meses, curiosa y amigable, necesita explorar y aprender."
     },
     {
       "imagenSrc": "animal4.jpg",
       "nombre": "Felina",
       "condicion": "ADOPTA O APADRINA",
-      "descripcion": "Hembra de 5 meses, tranquila y amorosa, perfecto para un hogar relajado."
+      "descripcion": "Hembra de 3 meses, tranquila y amorosa, perfecto para un hogar relajado."
     },
     {
       "imagenSrc": "animal5.jpg",
       "nombre": "TIGRILLO",
       "condicion": "ADOPTA O APADRINA",
-      "descripcion": "Macho de 5 meses, peludo y cariñoso, busca un compañero para jugar y compartir."
+      "descripcion": "Macho de 3 meses, peludo y cariñoso, busca un compañero para jugar y compartir."
     },
     {
       "imagenSrc": "animal6.jpg",
       "nombre": "LUNA",
       "condicion": "ADOPTA",
-      "descripcion": "Hembra joven de 7 meses, cariñosa y juguetona, ideal para una familia activa."
-    },
-    {
-      "imagenSrc": "animal7.jpg",
-      "nombre": "OSO",
-      "condicion": "ADOPTA",
-      "descripcion": "Macho  de 3 meses, tranquilo y leal, busca compañía y cariñoso."
-    },
-    {
-      "imagenSrc": "animal8.jpg",
-      "nombre": "MAX",
-      "condicion": "ADOPTA",
-      "descripcion": "Macho de 3 meses, inteligente y enérgico, le gusta aprender trucos nuevos."
+      "descripcion": "Hembra joven de 3 meses, cariñosa y juguetona, ideal para una familia activa."
     },
     {
       "imagenSrc": "animal9.jpg",
       "nombre": "BRUNO",
       "condicion": "ADOPTA",
-      "descripcion": "Macho joven de 1 año, lleno de energía y amor, necesita mucho espacio para jugar."
+      "descripcion": "Macho joven de 3 meses, lleno de energía y amor, necesita mucho espacio para jugar."
     }
   ]
 }

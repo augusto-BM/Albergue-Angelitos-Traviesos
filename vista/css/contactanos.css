@@ -206,3 +206,64 @@ button:hover {
 }
 
 
+/* Estilo base del botón */
+.whatsapp-flotante {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 80px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 999;
+  animation: bounce 2s infinite; /* Animación de rebote */
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+}
+
+/* Efecto de rebote */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Efecto al pasar el mouse */
+.whatsapp-flotante:hover {
+  background-color: #28e76e;
+  transform: scale(1.1); /* Aumento de tamaño al pasar el mouse */
+  box-shadow: 3px 3px 8px #666; /* Sombra más prominente */
+  animation: pulse 1.5s infinite; /* Efecto de pulso al pasar el cursor */
+}
+
+/* Efecto de pulso */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Estilo del icono */
+.whatsapp-flotante i {
+  font-size: 50px; /* Tamaño del icono ajustado */
+  line-height: 60px;
+}
+
+
